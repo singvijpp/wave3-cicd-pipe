@@ -10,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 jobs:
-  terraform:
+  BuildMaven:
     runs-on: ubuntu-latest
 
     steps:
