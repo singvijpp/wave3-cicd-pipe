@@ -33,4 +33,10 @@ jobs:
     - name: Build and Package
       run: |
         mvn clean
+
+    - name: publish artifact
+      uses: actions/upload-artifact@v2
+      with:
+        path: target/*.zip
+        name: Devops.zip
         
