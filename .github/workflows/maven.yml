@@ -4,7 +4,6 @@ env:
   project_id: db-cicdpipeline-wave-3
 on:
   push:
-    - maven-cicd
   workflow_dispatch:
 permissions:
   contents: read
@@ -28,11 +27,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-      
     - name: Build and Package
       run: |
         mvn clean
-    
+
     - name: publish artifact
       uses: actions/upload-artifact@v2
       with:
