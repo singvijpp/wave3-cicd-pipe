@@ -34,6 +34,6 @@ jobs:
     - name: publish artifact
       uses: actions/upload-artifact@v2
       with:
-        path: ./build/*
+        path: build
         name: Devops.zip
         
