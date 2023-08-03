@@ -11,6 +11,7 @@
         <fileSet>
             <directory>src/main</directory>
             <outputDirectory>/</outputDirectory>
+         <fileSet>         
         </fileSet>
             <includes>
                <include>**/*.py</include>
