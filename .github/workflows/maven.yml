@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Pyhton CI/CD with Maven
 
 env:
   project_id: db-cicdpipeline-wave-3
