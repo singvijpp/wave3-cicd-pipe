@@ -4,6 +4,9 @@ env:
   project_id: db-cicdpipeline-wave-3
 on:
   push:
+    branches:
+      - main
+      - pui-test
   workflow_dispatch:
 permissions:
   contents: read
