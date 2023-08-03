@@ -1,0 +1,6 @@
+[
+  "test_area.py::test_calculate_area_square",
+  "test_area.py::test_calculate_area_square_list",
+  "test_area.py::test_calculate_area_square_negative",
+  "test_area.py::test_calculate_area_square_string"
+]
