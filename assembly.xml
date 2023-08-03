@@ -9,7 +9,7 @@
     <includeBaseDirectory>false</includeBaseDirectory>
     <fileSets>
         <fileSet>
-            <directory>src</directory>
+            <directory>src/main</directory>
             <outputDirectory>/</outputDirectory>
         </fileSet>
         <fileSet>
