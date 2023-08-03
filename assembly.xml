@@ -12,7 +12,7 @@
             <directory>src/main</directory>
             <outputDirectory>/</outputDirectory>
         </fileSet>         
-        </fileSet>
+    </fileSets>
             <includes>
                <include>**/*.py</include>
             </includes>
