@@ -1,8 +1,7 @@
 import pytest
-from area import calculate_area_square
+from src.main.area import calculate_area_square
 import sys
  
-# adding Folder_2 to the system path
 sys.path.insert(0, '/src/main/')
 
 def test_calculate_area_square():
