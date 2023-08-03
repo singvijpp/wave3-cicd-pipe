@@ -29,11 +29,12 @@ jobs:
 
     - name: Build and Package
       run: |
-        mvn clean
-
+        mvn clean package
+        ls -lart target/*
+        
     - name: publish artifact
       uses: actions/upload-artifact@v2
       with:
-        path: target
-        name: Devops
+        path: target/*.zip
+        name: Devops.zip
         
