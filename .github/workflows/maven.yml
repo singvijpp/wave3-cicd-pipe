@@ -37,6 +37,11 @@ jobs:
     - name: Generate Coverage Report
       run: |
           coverage report -m
+
+    - name: Get Cover 
+      uses: orgoro/coverage@v3.1
+      with:
+        coverageFile: target/*coverage.xml
           
     - name: Build and Package
       run: |
