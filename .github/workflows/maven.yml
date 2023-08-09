@@ -33,9 +33,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest	--junitxml=coverage.xml 
-        ls -lart
-        pytest --cov-report term --cov-report xml:coverage.xml --cov=/src/test/test_area.py
-        ls -lart 
+        py.test --cov-report term --cov-report xml:coverage.xml --cov=/src/test/test_area.py
          
     - name: Generate Coverage Report
       run: |
