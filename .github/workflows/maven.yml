@@ -33,16 +33,12 @@ jobs:
     - name: Test with pytest
       run: |
           coverage run -m pytest  -v -s
+          py.test --cov-report term --cov-report xml:coverage.xml
           
     - name: Generate Coverage Report
       run: |
           coverage report -m
 
-    - name: Upload coverage report
-      uses: actions/upload-artifact@v2
-      with:
-          name: coverage-report
-          path: target/*index.html
           
     - name: Build and Package
       run: |
