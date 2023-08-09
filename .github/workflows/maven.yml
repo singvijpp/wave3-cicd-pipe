@@ -33,13 +33,11 @@ jobs:
     - name: Test with pytest
       run: |
           coverage run -m pytest  -v -s
-          py.test --cov-report term --cov-report xml:coverage.xml
           
     - name: Generate Coverage Report
       run: |
           coverage report -m
 
-          
     - name: Build and Package
       run: |
         mvn clean package
