@@ -33,7 +33,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest	--junitxml=coverage.xml 
-        py.test --cov-report term --cov-report xml:coverage.xml --cov=/src/test/test_area.py
+        py.test --cov-report term --cov-report xml:coverage.xml --cov=/src/
 
     - name: Build and Package
       run: |
