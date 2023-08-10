@@ -30,10 +30,15 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Test with pytest
-      run: |
-        pytest	--junitxml=coverage.xml 
-        py.test --cov-report term --cov-report xml:coverage.xml
+       
+    - name: Run tests with coverage
+      run: pytest --cov=/src/test --cov-report term --cov-report xml:coverage.xml
+
+    - name: Upload Coverage Report
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: target/*coverage.xml       
 
     - name: Build and Package
       run: |
